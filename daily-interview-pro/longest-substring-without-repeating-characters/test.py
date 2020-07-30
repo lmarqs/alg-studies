@@ -36,7 +36,10 @@ class Test(unittest.TestCase):
         self.assertEqual(3, Solution().lengthOfLongestSubstring('pwwkew'))
         self.assertEqual(7, Solution().lengthOfLongestSubstring('geeksforgeeks'))
         self.assertEqual(6, Solution().lengthOfLongestSubstring('abdefgabef'))
-        
+
+    def test_lengthOfLongestSubstring_withHardestCase(self):
+        self.assertEqual(10, Solution().lengthOfLongestSubstring('abrkaabcdefghijjxxx'))
+
 
 if __name__ == '__main__':
     unittest.main()
