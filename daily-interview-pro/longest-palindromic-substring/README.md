@@ -10,7 +10,7 @@ Input: "million"
 Output: "illi"
 ```
 
-```
+```python
 class Solution: 
     def longestPalindrome(self, s):
       # Fill this in.
