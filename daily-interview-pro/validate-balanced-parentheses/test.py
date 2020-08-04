@@ -4,14 +4,14 @@ from solution import Solution
 
 class Test(unittest.TestCase):
 
-    def test_lengthOfLongestSubstring_withEmptyString(self):
+    def test_isValid_withEmptyString(self):
         self.assertEqual(True, Solution().isValid(''))
 
-    def test_lengthOfLongestSubstring_withValidSequence(self):
+    def test_isValid_withValidSequence(self):
         self.assertEqual(True, Solution().isValid('((()))'))
         self.assertEqual(True, Solution().isValid('[()]{}'))
 
-    def test_lengthOfLongestSubstring_withInvalidSequence(self):
+    def test_isValid_withInvalidSequence(self):
         self.assertEqual(False, Solution().isValid('({[)]'))
 
 
