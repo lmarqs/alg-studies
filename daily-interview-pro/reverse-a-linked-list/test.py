@@ -14,5 +14,6 @@ class Test(unittest.TestCase):
         reverse = testHead.reverseRecursively()
         self.assertEqual('0 1 2 3 4 ', reverse.toString())
 
+
 if __name__ == '__main__':
     unittest.main()

@@ -8,7 +8,7 @@ class Solution:
             char = text[head]
 
             if char in last_seen:
-              tail = max(tail, last_seen[char])
+                tail = max(tail, last_seen[char])
 
             last_seen[char] = head
             result = max(result, head - tail)

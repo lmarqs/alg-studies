@@ -13,5 +13,6 @@ class Test(unittest.TestCase):
     def test_two_sum3(self):
         self.assertEqual(True, two_sum([4, 7], 11))
 
+
 if __name__ == '__main__':
     unittest.main()

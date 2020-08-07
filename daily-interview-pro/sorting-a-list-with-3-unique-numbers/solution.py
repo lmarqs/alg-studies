@@ -7,7 +7,7 @@ def sortNums(nums):
         if nums[i] == 1:
             nums[i], nums[one_idx] = nums[one_idx], nums[i]
             one_idx += 1
-            i += 1 # i can never be lower than one_idx
+            i += 1  # i can never be lower than one_idx
 
         elif nums[i] == 2:
             i += 1
