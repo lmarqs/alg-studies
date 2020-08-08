@@ -15,3 +15,5 @@ def two_sum(list, k):
 print two_sum([4,7,1,-3,2], 5)
 # True
 ```
+
+Try to do it in a single pass of the list.

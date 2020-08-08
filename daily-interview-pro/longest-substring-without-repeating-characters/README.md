@@ -10,3 +10,5 @@ class Solution:
 print Solution().lengthOfLongestSubstring('abrkaabcdefghijjxxx')
 # 10
 ```
+
+Can you find a solution in linear time?
