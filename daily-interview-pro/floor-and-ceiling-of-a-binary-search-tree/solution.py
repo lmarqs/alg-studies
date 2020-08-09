@@ -15,5 +15,5 @@ def findCeilingFloor(root, k, floor=None, ceil=None):
             [floor, ceil] = findCeilingFloor(root.left, k, floor, value)
         elif value < k:
             [floor, ceil] = findCeilingFloor(root.right, k, value, ceil)
-            
+
     return [floor, ceil]

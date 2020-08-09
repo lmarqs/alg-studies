@@ -6,6 +6,8 @@ param_list = [
     [4, [4, 3, 2, 1, 1, 3, 2]],
     [2, [4, 3, 2, 4, 1, 3, 1]],
 ]
+
+
 class Test(unittest.TestCase):
 
     def test_singleNumber(self):
