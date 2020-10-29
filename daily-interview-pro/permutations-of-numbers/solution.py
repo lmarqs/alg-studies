@@ -1,13 +1,12 @@
-def permute(nums, depth=0, result=[]):
+def permute(nums, depth=0):
     if depth == len(nums) - 1:
-        result += [nums]
-        return
+        return [nums]
 
-    permute(nums, depth + 1, result)
+    result = permute(nums, depth + 1)
 
     for i in range(depth + 1, len(nums)):
         nums = nums[:]
         nums[depth], nums[i] = nums[i], nums[depth]
-        permute(nums, depth + 1, result)
+        result += permute(nums, depth + 1)
 
     return result
