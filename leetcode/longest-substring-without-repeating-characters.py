@@ -3,20 +3,26 @@
 import unittest
 
 class Solution:
-  def lengthOfLongestSubstring(self, s: str) -> int:
+  def lengthOfLongestSubstring(self, s):
+    if len(s) < 2:
+      return len(s)
+
     positions = {}
     max_len = 0
-    tail = 0
+    tail = head = 0
 
-    for i in range(len(s)):
-      ch = s[i]
+    while head < len(s):
+      ch = s[head]
 
       if ch in positions:
-        tail = positions[ch] + 1
+        tail = max(tail, positions.pop(ch) + 1)
+        positions[ch] = head
+        head = max(head, tail) + 1
+      else:
+        positions[ch] = head
+        head += 1
 
-      positions[ch] = i
-
-      max_len = max(i - tail + 1, max_len)
+      max_len = max(head - tail, max_len)
 
     return max_len
 
@@ -24,6 +30,9 @@ param_list = [
   [3, "abcabcbb"],
   [1, "bbbbb"],
   [3, "pwwkew"],
+  [1, " "],
+  [2, "abba"],
+  [5, "tmmzuxt"]
 ]
 
 class Test(unittest.TestCase):
