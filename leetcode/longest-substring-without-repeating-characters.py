@@ -16,11 +16,9 @@ class Solution:
 
       if ch in positions:
         tail = max(tail, positions.pop(ch) + 1)
-        positions[ch] = head
-        head = max(head, tail) + 1
-      else:
-        positions[ch] = head
-        head += 1
+
+      positions[ch] = head
+      head = max(head, tail) + 1
 
       max_len = max(head - tail, max_len)
 
