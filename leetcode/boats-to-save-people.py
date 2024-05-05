@@ -28,7 +28,7 @@ param_list = [
 
 
 class Test(unittest.TestCase):
-    def test_reversePrefix(self):
+    def test_solution(self):
         for expected, people, limit in param_list:
             with self.subTest():
                 self.assertEqual(expected, Solution().numRescueBoats(people, limit))

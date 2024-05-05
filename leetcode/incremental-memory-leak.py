@@ -29,11 +29,10 @@ param_list = [
 
 
 class Test(unittest.TestCase):
-    def test_reversePrefix(self):
+    def test_solution(self):
         for expected, memory1, memory2 in param_list:
             with self.subTest():
                 self.assertEqual(expected, Solution().memLeak(memory1, memory2))
-
 
 if __name__ == "__main__":
     unittest.main()

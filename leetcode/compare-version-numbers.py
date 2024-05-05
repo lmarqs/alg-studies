@@ -32,7 +32,7 @@ param_list = [
 
 
 class Test(unittest.TestCase):
-    def test_reversePrefix(self):
+    def test_solution(self):
         for expected, version1, version2 in param_list:
             with self.subTest():
                 self.assertEqual(
