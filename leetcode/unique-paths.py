@@ -16,6 +16,7 @@ class Solution:
 param_list = [
     [28, 3, 7],
     [3, 3, 2],
+    [6, 3, 3],
 ]
 
 
