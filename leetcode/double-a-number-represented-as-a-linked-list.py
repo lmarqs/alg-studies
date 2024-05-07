@@ -26,20 +26,29 @@ def toList(head):
 
 class Solution(object):
     def doubleIt(self, head):
-        double = ""
+        double = 0
 
         while head != None:
-            double += str(head.val)
+            double *= 10
+            double += head.val
             head = head.next
 
-        double = str(int(double) * 2)
+        double = double * 2
 
-        return toLinkedList([int(double[i]) for i in range(len(double))])
+        head = None if double else ListNode()
+
+        while double:
+            head = ListNode(double % 10, head)
+            double //= 10
+
+        return head
 
 
 param_list = [
     [[3,7,8], [1,8,9]],
     [[1,9,9,8], [9,9,9]],
+    [[1,0], [5]],
+    [[0], [0]],
 ]
 
 
