@@ -25,23 +25,24 @@ def toList(head):
     return values
 
 class Solution(object):
+    def doubleItRec(self, head):
+        if head == None:
+            return head, 0
+
+        result, overflow = self.doubleItRec(head.next)
+
+        double = head.val * 2 + overflow
+        overflow = double // 10
+
+        return (ListNode(double % 10, result), overflow)
+
     def doubleIt(self, head):
-        double = 0
+        result, overflow = self.doubleItRec(head)
 
-        while head != None:
-            double *= 10
-            double += head.val
-            head = head.next
+        if overflow:
+            return ListNode(overflow, result)
 
-        double = double * 2
-
-        head = None if double else ListNode()
-
-        while double:
-            head = ListNode(double % 10, head)
-            double //= 10
-
-        return head
+        return result
 
 
 param_list = [
