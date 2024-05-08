@@ -5,10 +5,10 @@ import heapq
 
 class Solution:
     def findRelativeRanks(self, score):
-        h = []
+        heap = []
 
         for i in range(len(score)):
-            heapq.heappush(h, (-score[i], i))
+            heapq.heappush(heap, (-score[i], i))
 
         special_rank = {
             "1": "Gold Medal",
@@ -19,7 +19,7 @@ class Solution:
         ranking = [""] * len(score)
 
         for i in range(len(score)):
-            (score, idx) = heapq.heappop(h)
+            (score, idx) = heapq.heappop(heap)
             rank = str(i + 1)
             ranking[idx] = special_rank[rank] if rank in special_rank else rank
 
