@@ -10,7 +10,7 @@ class Solution:
         for i in range(len(score)):
             heapq.heappush(heap, (-score[i], i))
 
-        special_rank = {
+        special_ranks = {
             "1": "Gold Medal",
             "2": "Silver Medal",
             "3": "Bronze Medal",
@@ -21,7 +21,7 @@ class Solution:
         for i in range(len(score)):
             (score, idx) = heapq.heappop(heap)
             rank = str(i + 1)
-            ranking[idx] = special_rank[rank] if rank in special_rank else rank
+            ranking[idx] = special_ranks[rank] if rank in special_ranks else rank
 
         return ranking
 
