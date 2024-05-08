@@ -1,18 +1,14 @@
 # https://leetcode.com/problems/relative-ranks/description/
 
 import unittest
-
+import heapq
 
 class Solution:
     def findRelativeRanks(self, score):
-        positions = {}
+        h = []
 
         for i in range(len(score)):
-            positions[str(score[i])] = i
-
-        score = sorted(score, reverse=True)
-
-        ranking = [""] * len(score)
+            heapq.heappush(h, (-score[i], i))
 
         special_rank = {
             "1": "Gold Medal",
@@ -20,9 +16,12 @@ class Solution:
             "3": "Bronze Medal",
         }
 
+        ranking = [""] * len(score)
+
         for i in range(len(score)):
+            (score, idx) = heapq.heappop(h)
             rank = str(i + 1)
-            ranking[positions[str(score[i])]] = special_rank[rank] if rank in special_rank else rank
+            ranking[idx] = special_rank[rank] if rank in special_rank else rank
 
         return ranking
 
