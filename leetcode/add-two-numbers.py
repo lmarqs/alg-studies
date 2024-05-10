@@ -40,7 +40,9 @@ class Solution:
         return ListNode(
             value % 10,
             self.addTwoNumbers(
-                l1.next if l1 else None, l2.next if l2 else None, value // 10
+                l1.next if l1 else None, #
+                l2.next if l2 else None, #
+                value // 10              #
             ),
         )
 
