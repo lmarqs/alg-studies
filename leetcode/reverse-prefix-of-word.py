@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/reverse-prefix-of-word/description/
+# https://leetcode.com/problems/reverse-prefix-of-word
 
 import unittest
 

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/relative-ranks/description/
+# https://leetcode.com/problems/relative-ranks
 
 import unittest
 import heapq

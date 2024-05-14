@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/boats-to-save-people/description/
+# https://leetcode.com/problems/boats-to-save-people
 
 import unittest
 

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/maximize-happiness-of-selected-children/description/
+# https://leetcode.com/problems/maximize-happiness-of-selected-children
 
 import unittest
 

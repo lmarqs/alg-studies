@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/fibonacci-number/description/
+# https://leetcode.com/problems/fibonacci-number
 
 import unittest
 

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/incremental-memory-leak/description/
+# https://leetcode.com/problems/incremental-memory-leak
 
 import unittest
 

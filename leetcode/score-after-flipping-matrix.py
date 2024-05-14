@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/score-after-flipping-matrix/description/
+# https://leetcode.com/problems/score-after-flipping-matrix
 
 import unittest
 
