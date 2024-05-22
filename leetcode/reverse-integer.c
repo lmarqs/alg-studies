@@ -5,14 +5,14 @@ int reverse(int x) {
 
     int y = 0;
 
-    unsigned short int isNegative = x < 0;
+    short int isNegative = x < 0;
 
     if (isNegative) {
         x = -x;
     }
 
     while (x > 0) {
-        if (y > 214748364 && x > 7) {
+        if (y > 214748364 || (y == 214748364 && x > 7)) {
             return 0;
         }
 
