@@ -5,13 +5,13 @@ int reverse(int32_t x) {
         return 0;
     }
 
-    int64_t y = 0;
-
     short int isNegative = x < 0;
 
     if (isNegative) {
         x = -x;
     }
+
+    uint64_t y = 0;
 
     while (x > 0) {
         y *= 10;
@@ -19,13 +19,9 @@ int reverse(int32_t x) {
         x /= 10;
     }
 
-    if (y >= 0b10000000000000000000000000000000) {
+    if (y >= 0b01111111111111111111111111111111) {
         return 0;
     }
 
-    if (isNegative) {
-        y = -y;
-    }
-
-    return y;
+    return isNegative ? -y : y;
 }
