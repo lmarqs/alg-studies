@@ -1,11 +1,11 @@
 // https://leetcode.com/problems/reverse-integer
 
-int reverse(int x) {
-    if (x == -2147483648) {
+int reverse(int32_t x) {
+    if (x == -0b10000000000000000000000000000000) {
         return 0;
     }
 
-    int y = 0;
+    int64_t y = 0;
 
     short int isNegative = x < 0;
 
@@ -14,13 +14,13 @@ int reverse(int x) {
     }
 
     while (x > 0) {
-        if (y > 214748364 || (y == 214748364 && x > 7)) {
-            return 0;
-        }
-
         y *= 10;
         y += x % 10;
         x /= 10;
+    }
+
+    if (y >= 0b10000000000000000000000000000000) {
+        return 0;
     }
 
     if (isNegative) {
@@ -28,7 +28,4 @@ int reverse(int x) {
     }
 
     return y;
-}
-
-int main() {
 }
