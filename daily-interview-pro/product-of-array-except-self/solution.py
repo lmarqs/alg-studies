@@ -19,4 +19,4 @@ def products2(nums):
     for i in range(len(nums) - 1, 0, -1):
         suffix_products = [suffix_products[0] * nums[i]] + suffix_products
 
-    return [a * b for a, b in zip(prefix_products, suffix_products)] 
+    return [a * b for a, b in zip(prefix_products, suffix_products)]

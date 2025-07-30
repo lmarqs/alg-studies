@@ -11,8 +11,8 @@ def rearrangeString(s):
     heap = [(-count, char) for char, count in occurrences.items()]
     heapq.heapify(heap)
 
-    ans = ''
-    prev_count, prev_char = 0, ''
+    ans = ""
+    prev_count, prev_char = 0, ""
 
     while heap:
         count, char = heapq.heappop(heap)

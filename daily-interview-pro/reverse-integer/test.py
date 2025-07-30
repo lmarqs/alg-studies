@@ -10,5 +10,5 @@ class Test(unittest.TestCase):
         self.assertEqual(0, Solution().reverse(2**31))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

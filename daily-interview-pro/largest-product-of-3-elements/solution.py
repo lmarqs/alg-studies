@@ -37,5 +37,5 @@ def maximum_product_of_three(lst):
             if n >= positive3:
                 positive3 = n
                 continue
-            
+
     return max(negative1 * negative2 * positive1, positive3 * positive2 * positive1)

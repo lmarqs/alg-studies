@@ -10,7 +10,7 @@ class Node(object):
     def __str__(self):
         q = deque()
         q.append(self)
-        result = ''
+        result = ""
         while len(q):
             num = len(q)
             while num > 0:

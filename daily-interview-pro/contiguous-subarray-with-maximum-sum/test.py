@@ -22,5 +22,5 @@ class Test(unittest.TestCase):
         self.assertEqual(137, max_subarray_sum([34, -50, 42, 14, -5, 86]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

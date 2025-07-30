@@ -11,9 +11,13 @@ class Test(unittest.TestCase):
         self.assertEqual(3, longest_increasing_subsequence([1, 2, 1, 3]))
         self.assertEqual(4, longest_increasing_subsequence([1, 2, 1, 2, 3, 4, 3]))
 
-        self.assertEqual(len([0, 2, 6, 9, 11, 15]), longest_increasing_subsequence(
-            [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]))
+        self.assertEqual(
+            len([0, 2, 6, 9, 11, 15]),
+            longest_increasing_subsequence(
+                [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15]
+            ),
+        )
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

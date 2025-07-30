@@ -3,6 +3,7 @@
 import unittest
 import heapq
 
+
 class Solution:
     def findRelativeRanks(self, score):
         heap = []

@@ -44,11 +44,15 @@ class Solution:
 
 
 param_list = [
-    [True, [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCCED"],
-    [True, [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "SEE"],
-    [False, [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCB"],
+    [
+        True,
+        [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]],
+        "ABCCED",
+    ],
+    [True, [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "SEE"],
+    [False, [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCB"],
     [True, [["a"]], "a"],
-    [True, [["C","A","A"],["A","A","A"],["B","C","D"]], "AAB"]
+    [True, [["C", "A", "A"], ["A", "A", "A"], ["B", "C", "D"]], "AAB"],
 ]
 
 

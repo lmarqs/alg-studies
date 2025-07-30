@@ -1,6 +1,7 @@
 import unittest
 from solution import Node, intersection
 
+
 class Test(unittest.TestCase):
 
     def test_intersection(self):
@@ -15,5 +16,5 @@ class Test(unittest.TestCase):
         self.assertEqual([3, 4], intersection(a, b).toList())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

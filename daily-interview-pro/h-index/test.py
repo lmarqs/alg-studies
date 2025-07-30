@@ -24,5 +24,5 @@ class Test(unittest.TestCase):
         self.assertEqual(5, hIndex1([3, 5, 0, 1, 3, 5, 5, 5, 5]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

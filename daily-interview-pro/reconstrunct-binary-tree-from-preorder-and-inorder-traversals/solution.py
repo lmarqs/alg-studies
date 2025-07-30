@@ -2,7 +2,7 @@ from collections import deque
 
 
 class Node(object):
-    def __init__(self, val, left = None, right = None):
+    def __init__(self, val, left=None, right=None):
         self.val = val
         self.left = left
         self.right = right
@@ -10,7 +10,7 @@ class Node(object):
     def __str__(self):
         q = deque()
         q.append(self)
-        result = ''
+        result = ""
         while len(q):
             n = q.popleft()
             result += n.val
@@ -29,7 +29,7 @@ def reconstruct(preorder, inorder):
     val = preorder[0]
     idx = inorder.index(val)
 
-    left = reconstruct(preorder[1:idx+1], inorder[:idx])
-    right = reconstruct(preorder[idx+1:], inorder[idx+1:])
+    left = reconstruct(preorder[1 : idx + 1], inorder[:idx])
+    right = reconstruct(preorder[idx + 1 :], inorder[idx + 1 :])
 
     return Node(val, left, right)

@@ -2,6 +2,7 @@
 
 import unittest
 
+
 class Solution:
     def subsetXORSum(self, nums, xor=0):
         s = 0
@@ -12,7 +13,7 @@ class Solution:
             s += xors[-1]
 
         for i in range(len(xors) - 1):
-            s += self.subsetXORSum(nums[i + 1:], xors[i])
+            s += self.subsetXORSum(nums[i + 1 :], xors[i])
 
         return s
 

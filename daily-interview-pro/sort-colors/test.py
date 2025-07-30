@@ -12,5 +12,5 @@ class Test(unittest.TestCase):
         self.assertEqual(expected, Solution().sortColors2(colors))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

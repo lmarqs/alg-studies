@@ -24,9 +24,7 @@ class Solution:
 
         if l1.next or l2.next or acc:
             result.next = self.addTwoNumbers(
-                l1.next or ListNode(0),
-                l2.next or ListNode(0),
-                acc
+                l1.next or ListNode(0), l2.next or ListNode(0), acc
             )
 
         return result

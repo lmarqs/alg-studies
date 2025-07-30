@@ -4,6 +4,7 @@
 def findKthLargestSorting(arr, k):
     return sorted(arr)[-k]
 
+
 # Max-heap - time: O(n log k), space: O(k)
 
 
@@ -19,6 +20,7 @@ def findKthLargestMaxHeap(arr, k):
             heapq.heappop(heap)
 
     return heap[0]
+
 
 # QuickSelect - time: O(n) to O(n2), space: O(log n) to O(n)
 

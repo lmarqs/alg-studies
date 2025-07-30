@@ -10,7 +10,7 @@ class Node:
     def __str__(self):
         # level-by-level pretty-printer
         nodes = deque([self])
-        answer = ''
+        answer = ""
         while len(nodes):
             node = nodes.popleft()
             if not node:
@@ -31,6 +31,8 @@ def createBalancedBSTHelper(nums, start, end):
 
     middle = (start + end) // 2
 
-    return Node(nums[middle],
-                createBalancedBSTHelper(nums, start, middle - 1),
-                createBalancedBSTHelper(nums, middle + 1, end))
+    return Node(
+        nums[middle],
+        createBalancedBSTHelper(nums, start, middle - 1),
+        createBalancedBSTHelper(nums, middle + 1, end),
+    )

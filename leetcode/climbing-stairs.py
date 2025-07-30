@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/climbing-stairs
 import unittest
 
+
 class Solution(object):
     def climbStairs(self, n):
         n += 1
@@ -10,6 +11,7 @@ class Solution(object):
             steps[i] = steps[i - 1] + steps[i - 2]
 
         return steps[-1]
+
 
 param_list = [
     [1, 1],

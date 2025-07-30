@@ -7,7 +7,7 @@ param_list = [
     [False, [3, 4]],
     [False, [3, 4, 6]],
     [True, [3, 4, 5]],
-    [True, [3, 5, 12, 5, 13]]
+    [True, [3, 5, 12, 5, 13]],
 ]
 
 
@@ -19,5 +19,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(expected_value, findPythagoreanTriplets(arr))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

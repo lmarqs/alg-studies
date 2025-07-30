@@ -9,5 +9,5 @@ class Test(unittest.TestCase):
         self.assertEqual([120, 60, 40, 30, 24], products2([1, 2, 3, 4, 5]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

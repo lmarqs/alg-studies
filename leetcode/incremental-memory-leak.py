@@ -34,5 +34,6 @@ class Test(unittest.TestCase):
             with self.subTest():
                 self.assertEqual(expected, Solution().memLeak(memory1, memory2))
 
+
 if __name__ == "__main__":
     unittest.main()

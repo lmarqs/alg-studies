@@ -5,7 +5,7 @@ class ListNode(object):
 
     def toString(self):
         node = self
-        output = ''
+        output = ""
 
         while node != None:
             output += str(node.val)

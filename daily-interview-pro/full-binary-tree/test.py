@@ -25,8 +25,8 @@ class Test(unittest.TestCase):
         tree.right.right = Node(4)
         tree.right.left = Node(9)
         tree.left.left = Node(0)
-        self.assertEqual('1\n03\n94', fullBinaryTree(tree).__str__())
+        self.assertEqual("1\n03\n94", fullBinaryTree(tree).__str__())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

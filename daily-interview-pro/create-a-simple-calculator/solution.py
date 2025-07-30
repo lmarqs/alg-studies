@@ -1,23 +1,23 @@
-def recursive_eval(expression, ans=0, operation='+', i=0):
+def recursive_eval(expression, ans=0, operation="+", i=0):
     while i < len(expression):
         c = expression[i]
         i += 1
 
-        if c == ' ':
+        if c == " ":
             continue
 
-        elif c == '(':
+        elif c == "(":
             [ans, i] = recursive_eval(expression, ans, operation, i)
-        elif c == ')':
+        elif c == ")":
             break
 
-        elif c in '+-':
+        elif c in "+-":
             operation = c
 
-        elif operation == '+':
+        elif operation == "+":
             ans += int(c)
 
-        elif operation == '-':
+        elif operation == "-":
             ans -= int(c)
 
     return [ans, i]

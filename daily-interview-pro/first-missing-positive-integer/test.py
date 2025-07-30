@@ -11,5 +11,5 @@ class Test(unittest.TestCase):
         self.assertEqual(1, first_missing_positive([0]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

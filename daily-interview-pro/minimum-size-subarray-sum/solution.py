@@ -13,6 +13,6 @@ class Solution:
                 tail += 1
 
             if sum >= s and head - tail < ans:
-              ans = head - tail + 1
+                ans = head - tail + 1
 
         return ans if ans <= len(nums) else 0

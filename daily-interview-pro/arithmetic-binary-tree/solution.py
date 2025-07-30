@@ -9,15 +9,15 @@ def evaluate(root):
     if root == None:
         return 0
 
-    if root.val == '+':
+    if root.val == "+":
         return evaluate(root.left) + evaluate(root.right)
-    if root.val == '-':
+    if root.val == "-":
         return evaluate(root.left) - evaluate(root.right)
 
-    if root.val == '/':
+    if root.val == "/":
         return evaluate(root.left) / evaluate(root.right)
 
-    if root.val == '*':
+    if root.val == "*":
         return evaluate(root.left) * evaluate(root.right)
-    
+
     return root.val

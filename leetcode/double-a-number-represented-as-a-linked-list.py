@@ -2,10 +2,12 @@
 
 import unittest
 
+
 class ListNode(object):
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 def toLinkedList(values):
     head = None
@@ -15,6 +17,7 @@ def toLinkedList(values):
 
     return head
 
+
 def toList(head):
     values = []
 
@@ -23,6 +26,7 @@ def toList(head):
         head = head.next
 
     return values
+
 
 class Solution(object):
     def doubleItRec(self, head):
@@ -46,9 +50,9 @@ class Solution(object):
 
 
 param_list = [
-    [[3,7,8], [1,8,9]],
-    [[1,9,9,8], [9,9,9]],
-    [[1,0], [5]],
+    [[3, 7, 8], [1, 8, 9]],
+    [[1, 9, 9, 8], [9, 9, 9]],
+    [[1, 0], [5]],
     [[0], [0]],
 ]
 

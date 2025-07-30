@@ -36,5 +36,5 @@ class Test(unittest.TestCase):
         self.assertEqual(findCeilingFloor(root, 15), [14, None])
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

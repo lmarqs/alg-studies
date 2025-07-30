@@ -1,2 +1,8 @@
 [env]
 _.python.venv = { path = ".venv", create = true }
+
+[tasks.format]
+run = [
+    'black leetcode/**/*.py',
+    'black daily-interview-pro/**/*.py',
+]

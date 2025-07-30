@@ -14,5 +14,5 @@ class Test(unittest.TestCase):
         self.assertEqual(True, two_sum([4, 7], 11))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

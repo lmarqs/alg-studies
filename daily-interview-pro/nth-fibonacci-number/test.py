@@ -20,5 +20,5 @@ class Test(unittest.TestCase):
         self.assertEqual(233, Solution().fibonacci(13))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

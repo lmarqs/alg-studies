@@ -1,6 +1,6 @@
 class Solution:
     def isValid(self, expression):
-        dic = {'(': ')', '{': '}', '[': ']'}
+        dic = {"(": ")", "{": "}", "[": "]"}
 
         stack = []
 

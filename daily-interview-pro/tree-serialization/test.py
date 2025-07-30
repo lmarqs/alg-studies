@@ -17,11 +17,11 @@ class Test(unittest.TestCase):
         tree.right = Node(4)
         tree.right.right = Node(7)
 
-        self.assertEqual('1 3 2 # # 5 # # 4 # 7 # #', serialize(tree))
+        self.assertEqual("1 3 2 # # 5 # # 4 # 7 # #", serialize(tree))
 
     def test_deserialize(self):
-        self.assertEqual('132547', deserialize('1 3 2 # # 5 # # 4 # 7 # #').__str__())
+        self.assertEqual("132547", deserialize("1 3 2 # # 5 # # 4 # 7 # #").__str__())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

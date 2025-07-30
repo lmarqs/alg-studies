@@ -19,6 +19,7 @@ class Solution(object):
 
         return d[-1][-1]
 
+
 param_list = [
     [0, "b", "b"],
     [1, "banana", "babana"],

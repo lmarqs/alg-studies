@@ -11,5 +11,5 @@ class Test(unittest.TestCase):
         self.assertEqual(128, maximum_product_of_three([-4, -4, 2, 8]))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

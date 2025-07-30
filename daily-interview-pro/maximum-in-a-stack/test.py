@@ -15,5 +15,5 @@ class Test(unittest.TestCase):
         self.assertEquals(2, s.max())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

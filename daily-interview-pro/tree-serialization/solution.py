@@ -6,7 +6,7 @@ class Node:
 
     def __str__(self):
         # pre-order printing of the tree.
-        result = ''
+        result = ""
         result += str(self.val)
         if self.left:
             result += str(self.left)
@@ -17,17 +17,17 @@ class Node:
 
 def serialize(root):
     if root == None:
-        return '#'
-    return str(root.val) + ' ' + serialize(root.left) + ' ' + serialize(root.right)
+        return "#"
+    return str(root.val) + " " + serialize(root.left) + " " + serialize(root.right)
 
 
 def deserialize(data):
-    tree, _ = deserialize_rec(data.split(' '))
+    tree, _ = deserialize_rec(data.split(" "))
     return tree
 
 
 def deserialize_rec(data, i=0):
-    if data[i] == '#':
+    if data[i] == "#":
         return None, i
 
     v = int(data[i])

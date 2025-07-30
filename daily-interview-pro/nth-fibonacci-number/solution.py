@@ -1,4 +1,4 @@
-class Solution():
+class Solution:
     def fibonacci(self, n):
         b = 0
         a = 1

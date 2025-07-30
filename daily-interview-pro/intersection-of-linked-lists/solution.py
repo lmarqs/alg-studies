@@ -23,10 +23,9 @@ def intersection(a, b):
 
     node = b
     while node:
-        if(node.visited):
+        if node.visited:
             return node
 
         node = node.next
-
 
     return a

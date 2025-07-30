@@ -46,5 +46,5 @@ class Test(unittest.TestCase):
         self.assertEqual([7, 0, 8], Solution().addTwoNumbers(l1, l2).toArray())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

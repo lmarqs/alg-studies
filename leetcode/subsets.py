@@ -5,14 +5,14 @@ import unittest
 
 
 class Solution(object):
-    def subsets(self, nums, parent_set = [], depth=0):
+    def subsets(self, nums, parent_set=[], depth=0):
         current_sets = []
 
         for i in range(len(nums)):
             current_sets += [parent_set + [nums[i]]]
 
         for i in range(len(current_sets) - 1):
-            current_sets += self.subsets(nums[i + 1:], current_sets[i], depth + 1)
+            current_sets += self.subsets(nums[i + 1 :], current_sets[i], depth + 1)
 
         return current_sets if depth else [[]] + current_sets
 

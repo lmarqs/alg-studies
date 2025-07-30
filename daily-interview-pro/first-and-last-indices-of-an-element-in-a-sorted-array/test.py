@@ -38,7 +38,9 @@ class Test(unittest.TestCase):
         self.assertEqual([1, 4], Solution().getRange([1, 2, 2, 2, 2, 3, 4, 5, 6], 2))
 
     def test_getRange_withMultipleOcurrences4(self):
-        self.assertEqual([6, 8], Solution().getRange([1, 3, 3, 5, 7, 8, 9, 9, 9, 15], 9))
+        self.assertEqual(
+            [6, 8], Solution().getRange([1, 3, 3, 5, 7, 8, 9, 9, 9, 15], 9)
+        )
 
     def test_getRange_withMultipleOcurrences5(self):
         self.assertEqual([1, 2], Solution().getRange([100, 150, 150, 153], 150))
@@ -53,5 +55,5 @@ class Test(unittest.TestCase):
         self.assertEqual([3, 6], Solution().getRange([1, 2, 2, 3, 3, 3, 3], 3))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

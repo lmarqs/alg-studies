@@ -9,7 +9,6 @@ class TreeNode(object):
         self.left = left
         self.right = right
 
-
     def toList(self):
         result = [self.val]
         if self.left:
@@ -33,9 +32,17 @@ class Solution(object):
 
         return root
 
+
 param_list = [
-    [[1, None, 3, None, 4], TreeNode(1, TreeNode(2, TreeNode(2), None), TreeNode(3, TreeNode(2), TreeNode(4))), 2],
+    [
+        [1, None, 3, None, 4],
+        TreeNode(
+            1, TreeNode(2, TreeNode(2), None), TreeNode(3, TreeNode(2), TreeNode(4))
+        ),
+        2,
+    ],
 ]
+
 
 class Test(unittest.TestCase):
     def test_solution(self):

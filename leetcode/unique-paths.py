@@ -2,6 +2,7 @@
 
 import unittest
 
+
 class Solution:
     def uniquePaths(self, m, n):
         paths = [[1] * n] * m

@@ -2,11 +2,13 @@
 
 import unittest
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
+
 
 def toLinkedList(values):
     head = None
@@ -26,6 +28,7 @@ def toList(head):
 
     return values
 
+
 class Solution:
     def reverseList(self, head):
         prev = None
@@ -41,17 +44,21 @@ class Solution:
 
         return prev
 
+
 param_list = [
     [[], []],
     [[1], [1]],
-    [[1,2,3], [3,2,1]],
+    [[1, 2, 3], [3, 2, 1]],
 ]
+
 
 class Test(unittest.TestCase):
     def test_solution(self):
         for expected, case in param_list:
             with self.subTest():
-                self.assertEqual(expected, toList(Solution().reverseList(toLinkedList(case))))
+                self.assertEqual(
+                    expected, toList(Solution().reverseList(toLinkedList(case)))
+                )
 
 
 if __name__ == "__main__":

@@ -1,4 +1,3 @@
-
 def check(lst):
     count = 0
     highest = lst[0]

@@ -17,5 +17,5 @@ class Test(unittest.TestCase):
                 self.assertEqual(expected_value, singleNumber2(arr))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -2,6 +2,7 @@
 
 import unittest
 
+
 class Solution(object):
     def __init__(self):
         self.memo = {}
@@ -19,6 +20,7 @@ class Solution(object):
         self.memo[n] = self.fib(n - 1) + self.fib(n - 2)
 
         return self.memo[n]
+
 
 param_list = [
     [0, 0],

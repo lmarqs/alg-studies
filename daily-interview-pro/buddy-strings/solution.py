@@ -13,8 +13,8 @@ class Solution:
             return False
 
         diff_count = 0
-        diff_a = ''
-        diff_b = ''
+        diff_a = ""
+        diff_b = ""
 
         for i in range(len(A)):
             if A[i] == B[i]:

@@ -22,5 +22,5 @@ class Test(unittest.TestCase):
         self.assertEqual(0, Solution().minSubArrayLen([1, 2, 3], 7))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

@@ -12,9 +12,9 @@ class Solution(object):
         while i < l:
             c = dominoes[i]
 
-            if c == 'R':
+            if c == "R":
                 j = i + 1
-                while j < l and dominoes[j] != 'L':
+                while j < l and dominoes[j] != "L":
                     forces[j] += 1 / (j - i)
                     j += 1
 
@@ -22,24 +22,22 @@ class Solution(object):
                 i = j
                 continue
 
-
-            if c == 'L':
+            if c == "L":
                 j = i - 1
-                while j >= 0 and dominoes[j] != 'R':
+                while j >= 0 and dominoes[j] != "R":
                     forces[j] += 1 / (j - i)
                     j -= 1
 
             i += 1
 
-        result = ''
+        result = ""
         for i in range(l):
             f = forces[i]
             if f > 0:
-                result += 'R'
+                result += "R"
             elif f < 0:
-                result += 'L'
+                result += "L"
             else:
                 result += dominoes[i]
 
         return result
-

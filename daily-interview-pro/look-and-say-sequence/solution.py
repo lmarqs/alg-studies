@@ -1,12 +1,12 @@
 def lookAndSayNth(n):
-    ans = '1'
+    ans = "1"
     for _ in range(1, n):
         ans = lookAndSay(ans)
     return ans
 
 
 def lookAndSay(n):
-    ans = ''
+    ans = ""
     i = 0
 
     while i < len(n):

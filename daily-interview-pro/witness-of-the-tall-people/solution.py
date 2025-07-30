@@ -7,4 +7,3 @@ def witnesses(heights):
             count += 1
 
     return count
-

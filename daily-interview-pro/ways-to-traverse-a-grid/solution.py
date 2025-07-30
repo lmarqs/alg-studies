@@ -33,12 +33,12 @@ def num_ways_iterative(n, m):
 
             matrix[i][j] = matrix[i - 1][j] + matrix[i][j - 1]
 
-
     return matrix[n - 1][m - 1]
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import matplotlib.pyplot as plt
+
     counters = []
     for x in range(1, 13):
         counter = 0

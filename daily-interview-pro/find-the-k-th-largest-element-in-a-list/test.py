@@ -1,5 +1,9 @@
 import unittest
-from solution import findKthLargestSorting, findKthLargestMaxHeap, findKthLargestQuickSelect
+from solution import (
+    findKthLargestSorting,
+    findKthLargestMaxHeap,
+    findKthLargestQuickSelect,
+)
 
 
 class Test(unittest.TestCase):
@@ -38,5 +42,5 @@ class Test(unittest.TestCase):
         self.assertEquals(2, findKthLargestQuickSelect([3, 5, 2, 4, 6, 8], 6))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
