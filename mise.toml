@@ -3,6 +3,11 @@ _.python.venv = { path = ".venv", create = true }
 
 [tasks.format]
 run = [
-    'black leetcode/**/*.py',
-    'black daily-interview-pro/**/*.py',
+  'black leetcode/**/*.py',
+  'black daily-interview-pro/**/*.py',
+]
+
+[tasks.setup]
+run = [
+  'pip install -r requirements.txt',
 ]
